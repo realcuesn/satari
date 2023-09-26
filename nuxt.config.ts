@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   css: ['~/assets/css/tailwind.css', '~/assets/fonts/fonts.css'],
+  ssr: false,
   modules: ['@pinia/nuxt', '@formkit/auto-animate/nuxt'],
   postcss: {
     plugins: {
