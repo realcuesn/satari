@@ -5,7 +5,7 @@
                 <h2 class="text-muted-foreground text-xs font-semibold">MENU</h2>
                 <div class="w-full flex flex-col gap-y-0">
                     <!-- Dashboard -->
-                    <NuxtLink to="/app/" class="w-full">
+                    <NuxtLink to="/app/" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <HomeIcon></HomeIcon>
                             Dashboard
@@ -13,7 +13,7 @@
                     </NuxtLink>
 
                     <!-- Team Management -->
-                    <NuxtLink to="/app/team" class="w-full">
+                    <NuxtLink to="/app/team" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <RocketIcon></RocketIcon>
                             Team
@@ -21,7 +21,7 @@
                     </NuxtLink>
 
                     <!-- Leads and Clients -->
-                    <NuxtLink to="/app/leads" class="w-full">
+                    <NuxtLink to="/app/leads" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <CardStackIcon></CardStackIcon>
                             Leads
@@ -29,7 +29,7 @@
                     </NuxtLink>
 
                     <!-- Contacts -->
-                    <NuxtLink to="/app/contacts" class="w-full">
+                    <NuxtLink to="/app/contacts" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <PersonIcon></PersonIcon>
                             Contacts
@@ -37,7 +37,7 @@
                     </NuxtLink>
 
                     <!-- Appointments -->
-                    <NuxtLink to="/app/appointments" class="w-full">
+                    <NuxtLink to="/app/appointments" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <CalendarIcon></CalendarIcon>
                             Appointments
@@ -45,7 +45,7 @@
                     </NuxtLink>
 
                     <!-- Forms -->
-                    <NuxtLink to="/app/forms" class="w-full">
+                    <NuxtLink to="/app/forms" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <CubeIcon></CubeIcon>
                             Forms
@@ -53,7 +53,7 @@
                     </NuxtLink>
 
                     <!-- Tasks -->
-                    <NuxtLink to="/app/tasks" class="w-full">
+                    <NuxtLink to="/app/tasks" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <LightningBoltIcon></LightningBoltIcon>
                             Tasks
@@ -61,7 +61,7 @@
                     </NuxtLink>
 
                     <!-- Analytics -->
-                    <NuxtLink to="/app/analytics" class="w-full">
+                    <NuxtLink to="/app/analytics" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <BarChartIcon></BarChartIcon>
                             Analytics
@@ -69,7 +69,7 @@
                     </NuxtLink>
 
                     <!-- Tracking -->
-                    <NuxtLink to="/app/tracking" class="w-full">
+                    <NuxtLink to="/app/tracking" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <ActivityLogIcon></ActivityLogIcon>
                             Tracking
@@ -77,7 +77,7 @@
                     </NuxtLink>
 
                     <!-- Newsletter -->
-                    <NuxtLink to="/app/newsletter" class="w-full">
+                    <NuxtLink to="/app/newsletter" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <EnvelopeClosedIcon></EnvelopeClosedIcon>
                             Newsletter
@@ -85,7 +85,7 @@
                     </NuxtLink>
 
                     <!-- Team Updates -->
-                    <NuxtLink to="/app/team-updates" class="w-full">
+                    <NuxtLink to="/app/team-updates" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 gap-x-5" variant="link">
                             <InfoCircledIcon></InfoCircledIcon>
                             Team Updates
@@ -99,7 +99,7 @@
                 <div class="w-full flex flex-col gap-y-0">
                     <!-- Dashboard -->
 
-                    <NuxtLink to="/app/" class="w-full">
+                 <!--    <NuxtLink to="/app/" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 w-full justify-between text-muted-foreground" variant="link">
                             <div class="gap-x-5 flex items-center">
                                 <CircleIcon></CircleIcon>
@@ -111,7 +111,7 @@
                         </UiButton>
                     </NuxtLink>
 
-                    <NuxtLink to="/app/" class="w-full">
+                    <NuxtLink to="/app/" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 w-full justify-between text-muted-foreground" variant="link">
                             <div class="gap-x-5 flex items-center">
                                 <CircleIcon></CircleIcon>
@@ -123,7 +123,7 @@
                         </UiButton>
                     </NuxtLink>
 
-                    <NuxtLink to="/app/" class="w-full">
+                    <NuxtLink to="/app/" class="w-full transition-all duration-500 hover:opacity-60">
                         <UiButton class="pl-0 w-full justify-between text-muted-foreground" variant="link">
                             <div class="gap-x-5 flex items-center">
                                 <CircleIcon></CircleIcon>
@@ -133,7 +133,7 @@
                             <PersonIcon />
 
                         </UiButton>
-                    </NuxtLink>
+                    </NuxtLink> -->
 
 
                 </div>
@@ -151,10 +151,10 @@ import { CrownIcon } from 'lucide-vue-next';
 
 <style scoped>
 a {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .router-link-exact-active {
-    opacity: 1;
+    opacity: 0.6;
 }
 </style>

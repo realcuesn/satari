@@ -59,6 +59,14 @@ export default defineNuxtConfig({
     },
 
     {
+      path: '~/components/app/forms',
+      // this is required else Nuxt will autoImport `.ts` file
+      extensions: ['.vue'],
+      // prefix for your components, eg: UiButton
+      prefix: 'Form'
+    },
+
+    {
       path: '~/components/app',
       // this is required else Nuxt will autoImport `.ts` file
       extensions: ['.vue'],

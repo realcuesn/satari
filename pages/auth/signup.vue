@@ -40,12 +40,13 @@
                     <h2 class="text-2xl">Create an account</h2>
                     <p class="text-muted-foreground text-sm mt-2">Create your account with email & password</p>
                     <div class=" w-full space-y-1">
-                        <UiInput required class="w-full" v-model="username" type="text" placeholder="Username">
+                        <UiInput autocomplete required class="w-full" v-model="username" type="text" placeholder="Username">
                         </UiInput>
-                        <UiInput required class="w-full" v-model="email" type="email" placeholder="Email">
+                        <UiInput autocomplete required class="w-full" v-model="email" type="email" placeholder="Email">
                         </UiInput>
                         <div class="flex gap-x-1">
-                            <UiInput class="w-full" required type="password" v-model="password" placeholder="Password">
+                            <UiInput autocomplete class="w-full" required type="password" v-model="password"
+                                placeholder="Password">
                             </UiInput>
                             <UiPopover>
                                 <UiPopoverTrigger as-child>
@@ -169,7 +170,7 @@ const handleSubmit = async () => {
         const userRes = await requestFetchUserWithToken(res.token);
         console.log(userRes)
         store.updateUser(userRes)
-        router.push('/app/')
+        router.push('/flow/create-workspace')
     } catch (error) {
         console.log(error.message)
     }

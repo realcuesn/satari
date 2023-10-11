@@ -10,7 +10,7 @@
             <AppSidebarSheet></AppSidebarSheet>
         </div>
 
-        <div class="flex items-center gap-x-3">
+        <div class="flex items-center gap-x-3" v-auto-animate>
 
             <UiButton v-if="colorMode.preference == 'dark'" @click="colorMode.preference = 'light'" size="icon"
                 variant="ghost">

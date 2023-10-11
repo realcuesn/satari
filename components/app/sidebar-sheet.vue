@@ -7,100 +7,103 @@
             </UiButton>
         </UiSheetTrigger>
         <UiSheetContent side="left">
-            <UiSheetHeader class="w-full text-left">
-                <h2 class="text-muted-foreground text-xs font-semibold">MENU</h2>
-            </UiSheetHeader>
-            <UiSheetDescription>
-                <div class="w-full flex flex-col gap-y-0 pt-6">
-                    <!-- Dashboard -->
-                    <NuxtLink to="/app/" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <HomeIcon></HomeIcon>
-                            Dashboard
-                        </UiButton>
-                    </NuxtLink>
+            <div class="w-full h-full overflow-y-auto">
+                <UiSheetHeader class="w-full text-left">
+                    <h2 class="text-muted-foreground text-xs font-semibold">MENU</h2>
+                </UiSheetHeader>
+                <UiSheetDescription>
+                    <div class="w-full flex flex-col gap-y-0 pt-6">
+                        <!-- Dashboard -->
+                        <NuxtLink to="/app/" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <HomeIcon></HomeIcon>
+                                Dashboard
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Team Management -->
-                    <NuxtLink to="/app/team" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <RocketIcon></RocketIcon>
-                            Team
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Team Management -->
+                        <NuxtLink to="/app/team" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <RocketIcon></RocketIcon>
+                                Team
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Leads and Clients -->
-                    <NuxtLink to="/app/leads" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <CardStackIcon></CardStackIcon>
-                            Leads
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Leads and Clients -->
+                        <NuxtLink to="/app/leads" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <CardStackIcon></CardStackIcon>
+                                Leads
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Contacts -->
-                    <NuxtLink to="/app/contacts" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <PersonIcon></PersonIcon>
-                            Contacts
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Contacts -->
+                        <NuxtLink to="/app/contacts" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <PersonIcon></PersonIcon>
+                                Contacts
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Appointments -->
-                    <NuxtLink to="/app/appointments" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <CalendarIcon></CalendarIcon>
-                            Appointments
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Appointments -->
+                        <NuxtLink to="/app/appointments" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <CalendarIcon></CalendarIcon>
+                                Appointments
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Forms -->
-                    <NuxtLink to="/app/forms" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <CubeIcon></CubeIcon>
-                            Forms
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Forms -->
+                        <NuxtLink to="/app/forms" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <CubeIcon></CubeIcon>
+                                Forms
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Tasks -->
-                    <NuxtLink to="/app/tasks" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <LightningBoltIcon></LightningBoltIcon>
-                            Tasks
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Tasks -->
+                        <NuxtLink to="/app/tasks" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <LightningBoltIcon></LightningBoltIcon>
+                                Tasks
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Analytics -->
-                    <NuxtLink to="/app/analytics" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <BarChartIcon></BarChartIcon>
-                            Analytics
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Analytics -->
+                        <NuxtLink to="/app/analytics" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <BarChartIcon></BarChartIcon>
+                                Analytics
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Tracking -->
-                    <NuxtLink to="/app/tracking" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <ActivityLogIcon></ActivityLogIcon>
-                            Tracking
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Tracking -->
+                        <NuxtLink to="/app/tracking" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <ActivityLogIcon></ActivityLogIcon>
+                                Tracking
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Newsletter -->
-                    <NuxtLink to="/app/newsletter" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <EnvelopeClosedIcon></EnvelopeClosedIcon>
-                            Newsletter
-                        </UiButton>
-                    </NuxtLink>
+                        <!-- Newsletter -->
+                        <NuxtLink to="/app/newsletter" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <EnvelopeClosedIcon></EnvelopeClosedIcon>
+                                Newsletter
+                            </UiButton>
+                        </NuxtLink>
 
-                    <!-- Team Updates -->
-                    <NuxtLink to="/app/team-updates" class="w-full">
-                        <UiButton class="pl-0 gap-x-5" variant="link">
-                            <InfoCircledIcon></InfoCircledIcon>
-                            Team Updates
-                        </UiButton>
-                    </NuxtLink>
-                </div>
-            </UiSheetDescription>
+                        <!-- Team Updates -->
+                        <NuxtLink to="/app/team-updates" class="w-full">
+                            <UiButton class="pl-0 gap-x-5" variant="link">
+                                <InfoCircledIcon></InfoCircledIcon>
+                                Team Updates
+                            </UiButton>
+                        </NuxtLink>
+                    </div>
+                </UiSheetDescription>
+            </div>
+
         </UiSheetContent>
     </UiSheet>
 </template>

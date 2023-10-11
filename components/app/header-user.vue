@@ -2,7 +2,7 @@
     <div>
         <UiDropdownMenu>
             <UiDropdownMenuTrigger as-child>
-                <UiAvatar class="block h-6 w-6">
+                <UiAvatar class="block h-6 w-6 cursor-pointer">
                     <UiAvatarImage src="https://github.com/radix-vue.png" alt="@radix-vue" />
                     <UiAvatarFallback class="h-full w-full grid place-content-center">CN</UiAvatarFallback>
                 </UiAvatar>
@@ -34,15 +34,14 @@
                 </UiDropdownMenuGroup>
                 <UiDropdownMenuSeparator />
                 <UiDropdownMenuGroup>
-                    <UiDropdownMenuItem>
-                        <Users class="mr-2 h-4 w-4" />
-                        <span>Team</span>
-                    </UiDropdownMenuItem>
-                    <UiDropdownMenuItem>
-                        <Plus class="mr-2 h-4 w-4" />
-                        <span>New Team</span>
-                        <UiDropdownMenuShortcut>⌘+T</UiDropdownMenuShortcut>
-                    </UiDropdownMenuItem>
+                    <NuxtLink to="/app/team">
+                        <UiDropdownMenuItem>
+                            <Users class="mr-2 h-4 w-4" />
+                            <span>Team</span>
+                        </UiDropdownMenuItem>
+                    </NuxtLink>
+
+                    <AppHeaderUserAddMember></AppHeaderUserAddMember>
                 </UiDropdownMenuGroup>
                 <UiDropdownMenuSeparator />
                 <UiDropdownMenuItem>
@@ -58,7 +57,7 @@
                     <span>API</span>
                 </UiDropdownMenuItem>
                 <UiDropdownMenuSeparator />
-                <UiDropdownMenuItem>
+                <UiDropdownMenuItem @click="handleLogout">
                     <LogOut class="mr-2 h-4 w-4" />
                     <span>Log out</span>
                     <UiDropdownMenuShortcut>⇧⌘Q</UiDropdownMenuShortcut>
@@ -76,13 +75,20 @@ import {
     Keyboard,
     LifeBuoy,
     LogOut,
-    Mail,
-    MessageSquare,
     Plus,
-    PlusCircle,
     Settings,
     User,
-    UserPlus,
     Users,
-} from 'lucide-vue-next'
+} from "lucide-vue-next";
+const authStore = useAuthStore();
+const workspacesStore = useWorkspacesStore();
+const handleLogout = async () => {
+    const router = useRouter();
+    localStorage.removeItem("token");
+    localStorage.removeItem("selectedWorkspace");
+    authStore.updateUser(null);
+    authStore.updateUser(null);
+    workspacesStore.selectWorkspace(null);
+    await router.push("/auth/login");
+};
 </script>
