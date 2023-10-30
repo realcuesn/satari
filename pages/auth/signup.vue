@@ -117,7 +117,7 @@
 </template>
 
 <script setup>
-import { DiscordLogoIcon, GithubLogoIcon, InfoCircledIcon, TwitterLogoIcon } from '@radix-icons/vue';
+import { DiscordLogoIcon, InfoCircledIcon } from '@radix-icons/vue';
 import { Loader2 } from 'lucide-vue-next';
 import { requestFetchUserWithToken } from '~/composables/request-fetch-user-with-token';
 const isLoading = ref(false);
